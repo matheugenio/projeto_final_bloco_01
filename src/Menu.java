@@ -56,7 +56,7 @@ public class Menu {
                     break;
 
                 default:
-                    System.out.println("\nOpção Inválida!\n" );
+                    System.out.println("\nOpção Inválida!\n");
                     break;
             }
         }
