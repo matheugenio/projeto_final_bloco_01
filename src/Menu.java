@@ -1,7 +1,16 @@
+import model.Console;
+import model.Jogo;
+
 import java.util.Scanner;
 
 public class Menu {
     public static void main(String[] args) {
+
+        Console console1 = new Console(1, "Playstation 5", 5000.00f, "Sony", "Fixo", "500GB");
+        Jogo jogo1 = new Jogo(2, "Metal Slug", 120.0f, "SNK", "Shooter", "Xbox");
+        console1.visualizar();
+        jogo1.visualizar();
+
         Scanner leia = new Scanner(System.in);
 
         int opcao;

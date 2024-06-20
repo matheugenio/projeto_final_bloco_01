@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b046bab4-d369-4eb1-b446-c3c86a136746" name="Changes" comment="Commit inicial">
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+    <list default="true" id="b046bab4-d369-4eb1-b446-c3c86a136746" name="Changes" comment="fix: Correção de Indentação">
+      <change afterPath="$PROJECT_DIR$/src/model/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Jogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/ProdutoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +21,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Menu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +46,7 @@
   "keyToString": {
     "Application.Menu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Menu",
+    "git-widget-placeholder": "Model__Repository",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -76,11 +81,29 @@
       <option name="project" value="LOCAL" />
       <updated>1718887775205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Criação do menu principal">
+      <option name="closed" value="true" />
+      <created>1718888770860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718888770860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: Correção de Indentação">
+      <option name="closed" value="true" />
+      <created>1718888914694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718888914694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial" />
+    <MESSAGE value="feat: Criação do menu principal" />
+    <MESSAGE value="fix: Correção de Indentação" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Correção de Indentação" />
   </component>
 </project>
