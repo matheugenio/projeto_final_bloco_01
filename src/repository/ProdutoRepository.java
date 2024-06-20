@@ -6,6 +6,8 @@ public interface ProdutoRepository {
 
     public void procurarProduto(int id);
 
+    public void procurarPorNome(String nome);
+
     public void listarProdutos();
 
     public void cadastrar(Produto produto);

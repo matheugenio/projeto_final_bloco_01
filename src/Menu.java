@@ -35,13 +35,14 @@ public class Menu {
             System.out.println("                GAMESTORE              ");
             System.out.println("                                                     ");
             System.out.println("*****************************************************");
-            System.out.println("                                                     ");
+            System.out.println("                                                      ");
             System.out.println("            1 - Cadastrar Produto                     ");
             System.out.println("            2 - Listar todas os produtos              ");
-            System.out.println("            3 - Buscar produto                        ");
+            System.out.println("            3 - Buscar produto por id                 ");
             System.out.println("            4 - Atualizar Produto                     ");
             System.out.println("            5 - Apagar Produto                        ");
-            System.out.println("            6 - Sair                      ");
+            System.out.println("            6 - Buscar produto por nome               ");
+            System.out.println("            7 - Sair                                  ");
             System.out.println("                                                      ");
             System.out.println("*****************************************************");
             System.out.println("Entre com a opção desejada:                          ");
@@ -55,7 +56,7 @@ public class Menu {
                 opcao = 0;
             }
 
-            if (opcao == 6) {
+            if (opcao == 7) {
                 System.out.println("\nGameStore - Jogue com qualidade!");
                 leia.close();
                 System.exit(0);
@@ -162,6 +163,16 @@ public class Menu {
 
                     break;
 
+                case 6:
+                    System.out.println("Buscar Produto\n\n");
+
+                    System.out.println("Digite o nome do produto ");
+                    leia.nextLine();
+                    nome = leia.nextLine();
+
+                    produtos.procurarPorNome(nome);
+
+                    break;
                 default:
                     System.out.println("\nOpção Inválida!\n");
                     break;

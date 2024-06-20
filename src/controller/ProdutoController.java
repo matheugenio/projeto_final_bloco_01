@@ -4,6 +4,7 @@ import model.Produto;
 import repository.ProdutoRepository;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ProdutoController implements ProdutoRepository {
 
@@ -18,6 +19,17 @@ public class ProdutoController implements ProdutoRepository {
             produto.visualizar();
         else
             System.out.println("\nO produto de id : " + id + " não foi encontrado!");
+
+    }
+
+    @Override
+    public void procurarPorNome(String nome) {
+        var produto = buscarPorNome(nome);
+
+        if (produto != null)
+            produto.visualizar();
+        else
+            System.out.println("\nO Produto : " + nome + " não foi encontrado!");
 
     }
 
@@ -60,6 +72,18 @@ public class ProdutoController implements ProdutoRepository {
     public Produto buscarNaLista(int id) {
         for (var produto : listaProdutos) {
             if (produto.getId() == id) {
+                return produto;
+            }
+        }
+        return null;
+    }
+
+    public Produto buscarPorNome(String nome) {
+
+        String nomeMinusculo = nome.toLowerCase();
+
+        for (var produto : listaProdutos) {
+            if (Objects.equals(produto.getNome().toLowerCase(), nomeMinusculo)) {
                 return produto;
             }
         }
