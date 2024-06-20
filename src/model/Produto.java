@@ -6,12 +6,14 @@ public abstract class Produto {
     private String nome;
     private float preco;
     private String fabricante;
+    private int tipo;
 
-    public Produto(int id, String nome, float preco, String fabricante) {
+    public Produto(int id, String nome, float preco, String fabricante, int tipo) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.fabricante = fabricante;
+        this.tipo = tipo;
     }
 
     public int getId() {
@@ -44,6 +46,14 @@ public abstract class Produto {
 
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     public void visualizar() {

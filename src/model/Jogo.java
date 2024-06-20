@@ -5,8 +5,8 @@ public class Jogo extends Produto {
     private String genero;
     private String plataforma;
 
-    public Jogo(int id, String nome, float preco, String fabricante, String genero, String plataforma) {
-        super(id, nome, preco, fabricante);
+    public Jogo(int id, String nome, float preco, String fabricante, int tipo, String genero, String plataforma) {
+        super(id, nome, preco, fabricante, tipo);
         this.genero = genero;
         this.plataforma = plataforma;
     }
